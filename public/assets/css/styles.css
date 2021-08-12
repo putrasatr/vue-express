@@ -1,0 +1,37 @@
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #f4e5c3;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar {
+    z-index: 1;
+    width: 10%;
+    height: 100%;
+    position: sticky;
+}
+
+.sidebar-item, .footer-item {
+    flex-direction: column;
+}
+
+footer {
+    border-top: 0.4px solid #7a7a7a;
+    margin-top: 10px;
+}
+
+.footer-item {
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
