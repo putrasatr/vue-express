@@ -1,0 +1,22 @@
+<%- include('./partials/header') %>
+<%- include('./sidebar') %>
+<div class="position-relative d-flex justify-content-center align-items-center" style="width: 100%;">
+    <img src="assets/images/jumbotron.png" alt="" style="max-width: 70%;">
+</div>
+
+    <div class="container" id="action">
+        <div id="app">
+            <div id="item-col" v-for="({title,image},i) in displayMovies">
+                <div class="d-flex justify-content-center mt-2">
+                    <div style="width: 70%; height: 200px;">
+                        <span>{{title}}</span>
+                    </div>
+                    <div style="width: 20%; max-height: 200px;">
+                        <img v-bind:src="image" class="img-pop" alt="" style="width: 100%; max-height: 200px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+<%- include("partials/footer")%>
